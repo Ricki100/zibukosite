@@ -962,6 +962,41 @@ input[type='checkbox'] {
 	margin-right: 1rem;
 }
 
+
+
+.tabs #tab-4 .card.left-pane .text-wrapper {
+	display: inline-block;
+	width: 75%;
+}
+
+.tabs #tab-4 .card.left-pane .card-icon {
+	float: left;
+	margin-right: 1rem;
+}
+
+.tabs #tab-4 img {
+	display: block;
+	margin: 2rem auto 3rem auto;
+}
+
+.tabs #tab-4 .card.right-pane .text-wrapper {
+	display: inline-block;
+	width: 75%;
+}
+
+.tabs #tab-4 .card.right-pane .card-icon {
+	margin-right: 1rem;
+}
+
+
+
+.far{
+	font-weight: 900;
+	margin-right: 0.375rem;
+    font-size: 1rem;
+}
+
+
 .tabs #tab-2 img {
 	display: block;
 	margin: 0 auto 2rem auto;
@@ -1648,6 +1683,11 @@ a:hover.back-to-top {
 		width: 85%;
 	}
 
+	.tabs #tab-4 .card.left-pane .text-wrapper {
+		width: 85%;
+	}
+
+
 	.tabs #tab-2 img {
 		margin-bottom: 0;
 	}
@@ -1820,6 +1860,32 @@ a:hover.back-to-top {
 		margin-top: 0;
 		margin-bottom: 0;
 	}
+
+
+
+	
+	.tabs #tab-4 .card.left-pane {
+		text-align: right;
+	}
+
+	.tabs #tab-4 .card.left-pane .text-wrapper,
+	.tabs #tab-4 .card.right-pane .text-wrapper {
+		width: 68%;
+	}
+
+	.tabs #tab-4 .card.left-pane .card-icon {
+		float: none;
+		margin-right: 0;
+		margin-left: 1rem;
+	}
+
+	.tabs #tab-4 img {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+
+
 	
 	.tabs #tab-2 .icon-cards-area {
 		margin-top: 2.25rem;
@@ -1999,6 +2065,34 @@ a:hover.back-to-top {
 	.tabs #tab-1 img {
 		margin-top: 0;
 	}
+
+	.tabs #tab-4 .card.first {
+		margin-top: 4.25rem;
+	}
+
+	.tabs #tab-4 .card {
+		margin-bottom: 0.75rem;
+	}
+
+	.tabs #tab-4 .card.left-pane .text-wrapper,
+	.tabs #tab-4 .card.right-pane .text-wrapper {
+		width: 55%;
+	}
+
+	.tabs #tab-4 img {
+		margin-top: 0;
+	}
+
+
+
+
+
+
+
+
+
+
+
 
 	.tabs #tab-2 .container {
 		padding-right: 2.5rem;
