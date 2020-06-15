@@ -794,8 +794,9 @@ input[type='checkbox'] {
 /*     05. Testimonials     */
 /****************************/
 .slider-1 {
-	padding-top: 2rem;
-	padding-bottom: 6.375rem;
+	padding-top: 10rem;
+	padding-bottom: 10rem;
+	background: rgb(206, 206, 206);
 
 }
 
