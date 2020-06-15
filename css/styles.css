@@ -660,7 +660,7 @@ input[type='checkbox'] {
 
 .navbar-custom .nav-item .nav-link {
 	padding: 0 0.75rem 0 0.75rem;
-	color: rgb(206, 206, 206) !important;
+	color: rgb(206, 206, 206);
 	text-decoration: none;
 	transition: all 0.2s ease;
 }
@@ -750,6 +750,10 @@ input[type='checkbox'] {
 .navbar-custom button[aria-expanded='true'] .navbar-toggler-awesome.fas.fa-times{
 	display: inline-block;
 	margin-right: 0.125rem;
+}
+
+.navbar-toggler{
+	background-color: rgb(206, 206, 206) !important;
 }
 
 
@@ -1636,7 +1640,7 @@ a:hover.back-to-top {
 
 	.navbar-custom .nav-item .nav-link {
 		padding: 0.25rem 0.75rem 0.25rem 0.75rem;
-		color: #fff;
+		color: rgb(206, 206, 206);
 	}
 	
 	.navbar-custom .nav-item .nav-link:hover,
