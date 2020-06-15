@@ -929,6 +929,16 @@ input[type='checkbox'] {
 	background-color: #47b44f;
 	text-align: center;
 	vertical-align: top;
+	position: relative;
+}
+
+.number{
+	position: absolute;
+	color: white;
+	font-size: 40px;
+	left: 25px;
+top: 24px;
+font-weight: bold;
 }
 
 .tabs .card .card-icon .fas,
@@ -1040,6 +1050,7 @@ input[type='checkbox'] {
 /*     07. Video     */
 /*********************/
 .basic-1 {
+	margin-top: 300px;
 	padding-top: 6.375rem;
 	padding-bottom: 6.875rem;
 	background: url('../images/video-background.jpg') center center no-repeat;
@@ -1270,7 +1281,7 @@ input[type='checkbox'] {
 .slider-2 {
 	padding-top: 6.875rem;
 	padding-bottom: 6.875rem;
-	background-color: #2f2c3d;
+
 }
 
 .slider-2 .slider-container {
@@ -1314,7 +1325,7 @@ input[type='checkbox'] {
 .basic-4 {
 	padding-top: 6.5rem;
 	padding-bottom: 6.75rem;
-	background: url('../images/download-background.jpg') center center no-repeat;
+	background: url(/images/download-background.jpg);
 	background-size: cover; 
 }
 
@@ -1336,6 +1347,15 @@ input[type='checkbox'] {
 	margin-bottom: 1.25rem;
 }
 
+.social{
+	font-size: 4rem;
+	text-align: center;
+	margin-right: 40px;
+}
+
+.social-icons{
+text-align: center;
+}
 
 /**************************/
 /*     18. Statistics     */
@@ -1353,6 +1373,7 @@ input[type='checkbox'] {
 	margin-right: 1rem;
 	margin-left: 1rem;
 	margin-bottom: 2rem;
+	width: 500px;
 }
 
 .counter #counter .counter-value {
@@ -1366,6 +1387,7 @@ input[type='checkbox'] {
 	color: #47b44f;
 	font: 400 0.875rem/1.25rem "Open Sans", sans-serif;
 	vertical-align: middle;
+	text-align: center;
 }
 
 
@@ -1981,6 +2003,7 @@ a:hover.back-to-top {
 		width: 8rem;
 		margin-right: 2.5rem;
 		margin-left: 2.5rem;
+		width: 500px;
 	}
 	
 	.counter #counter .counter-value {
