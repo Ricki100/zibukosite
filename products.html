@@ -260,21 +260,31 @@
 				<img class="img-fluid" src="images/details-lightbox-1.png" alt="alternative">
 			</div>
 			<div class="col-lg-6">
-				<h3>FUNDA</h3>
-				<hr>
-                <p>Leno can easily help you track your personal development evolution if you take the time to set it up.</p>
-                <h4>User Feedback</h4>
-                <p>This is a great app which can help you save time and make your live easier. And it will help improve your productivity levels.</p>
-                <p>You should definitely give it a try when you need a good app.</p>
-				<table>
-					<tr><td class="icon-cell"><i class="fas fa-desktop"></i></td><td>Responsive layout</td></tr>
-					<tr><td class="icon-cell"><i class="fas fa-bullhorn"></i></td><td>Distinctive CTAs</td></tr>
-					<tr><td class="icon-cell"><i class="fas fa-image"></i></td><td>Image gallery slider</td></tr>
-					<tr><td class="icon-cell"><i class="fas fa-envelope"></i></td><td>Contact forms</td></tr>
-					<tr><td class="icon-cell"><i class="fab fa-font-awesome-flag"></i></td><td>FontAwesome icons</td></tr>
-					<tr><td class="icon-cell"><i class="fas fa-code"></i></td><td>Well-structured code</td></tr>
-				</table>
-				<a class="btn-solid-reg" href="#your-link">DETAILS</a> <a class="btn-outline-reg mfp-close as-button" href="#details">BACK</a> 
+                <form action="">
+                    <input  name="fname" type="text" placeholder="First Name" class="input" required>
+                    <input  name="lname" type="text" placeholder="Last Name" class="input" required>
+                    <input  name="id" type="text" placeholder="ID Number" class="input" required>
+                    <input  name="address" type="text" placeholder="Address" class="input" required>
+                    <input  name="cell" type="number" placeholder="Cell Number" class="input" required>
+                    <input  name="email" type="email" placeholder="Email" class="input" required>
+                    <input  name="loan-amount" type="number" placeholder="Loan amount" class="input" required>
+                    <input  name="loan-term" type="number" placeholder="Loan term in months" class="input" required>
+                    <input type="text" name="company-name" type="text" placeholder="Name of employer or company" class="input" required>
+                    <label for="work-start-date">When did you start working?</label>
+                    <input  name="Work-start-date" type="date" placeholder="When did you start working?" class="input" required>
+                    <div >Type of employment contract</div>
+                    <div class="input">
+                      
+                        <input type="radio" id="contract" name="employment-contract" style="width: 50px !important;" value="Permanent">Permanent
+                        <input type="radio" id="contract" name="employment-contract" style="width: 50px !important;" value="Contract">Contract
+                </div>
+
+                <label for="contract-end-date">Contract End Date</label>
+                    <input name="contract-end-date" type="date" class="input" required>
+                    <input type="text" name="Job Title" type="text" placeholder="What do you do for a living?" class="input" required>
+                    <input  name="Salary" type="number" placeholder="Monthly Salary" class="input" required>
+                </form>
+				<Button class="btn-solid-reg" type="submit" name="submit">SUBMIT</Button> 
 			</div>
 		</div> <!-- end of row -->
     </div> <!-- end of lightbox-basic -->
