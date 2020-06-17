@@ -864,6 +864,21 @@ input[type='checkbox'] {
 }
 
 
+
+.enMoney::before {
+    content:"$";
+}
+.negMoney {
+    color:red;
+}
+div.negMoney::before {
+    content:'($';
+}
+div.negMoney::after {
+    content:')';
+}
+
+
 /************************/
 /*     05. Features     */
 /************************/

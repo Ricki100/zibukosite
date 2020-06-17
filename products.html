@@ -268,8 +268,9 @@
                     <input  name="id" type="text" placeholder="ID Number" class="input" required>
                     <input  name="address" type="text" placeholder="Address" class="input" required>
                     <input  name="cell" type="number" onkeypress="phonenumber" placeholder="Cell Number" class="input" required>
-                    <input  name="email" type="email" placeholder="Email" class="input" required>
-                    <input  name="loan-amount" type="number" onkeypress="phonenumber" placeholder="Loan amount" class="input" required>
+                    <input  name="email" type="email" placeholder="Email" id="email" class="input" onkeyup="ValidateEmail()" required>
+                    <span id="lblError" style="color: red"></span>
+                    <input  name="loan-amount" type="number" onkeypress="phonenumber" placeholder="Loan amount" class="input amount" required>
                     <input  name="loan-term" type="number" onkeypress="phonenumber" placeholder="Loan term in months" class="input" required>
                     <input  name="company-name" type="text" placeholder="Name of employer or company" class="input" required>
                     <label for="work-start-date">When did you start working?</label>
