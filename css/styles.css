@@ -1395,7 +1395,7 @@ text-align: center;
 .counter {
 	padding-top: 6.5rem;
 	padding-bottom: 5.375rem;
-	background-color: #2c1a7e;
+	background-color: #272E6C;
 	text-align: center;
 }
 
@@ -1462,7 +1462,7 @@ text-align: center;
 /**********************/
 .footer {
 	padding-top: 5rem;
-	background-color: #2c1a7e;
+	background-color: #272E6C;
 }
 
 .footer .footer-col {
@@ -1542,7 +1542,7 @@ a.back-to-top {
 }
 
 a:hover.back-to-top {
-	background-color: #36edfd; 
+	background-color: #272E6C; 
 }
 
 
@@ -1552,7 +1552,7 @@ a:hover.back-to-top {
 .ex-header {
 	padding-top: 8rem;
 	padding-bottom: 5rem;
-	background: linear-gradient(to bottom right, #2c1a7e, #5557db);
+	background: linear-gradient(to bottom right, #272E6C, #5557db);
 	text-align: center;
 }
 
