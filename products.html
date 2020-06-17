@@ -262,6 +262,7 @@
 			<div class="col-lg-6">
                 <form id="form" name="form1" class="contact gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
                 action="https://script.google.com/macros/s/AKfycbwQHm8G8ZPmOlbDxVcNPmGILJs_Xg3vnjoCmRYPTQ/exec" onsubmit="setTimeout (validateForm, 2000);">
+                    <input  name="type" type="text" Value="FUNDA LOAN" class="input" required style="position:absolute; visibility: hidden;">
                     <input  name="fname" type="text" placeholder="First Name" class="input" required>
                     <input  name="lname" type="text" placeholder="Last Name" class="input" required>
                     <input  name="id" type="text" placeholder="ID Number" class="input" required>
@@ -284,8 +285,9 @@
                     <input name="contract-end-date" type="date" class="input" required>
                     <input type="text" name="job-title" type="text" placeholder="What do you do for a living?" class="input" required>
                     <input  name="salary" type="number" onkeypress="phonenumber" placeholder="Monthly Salary" class="input" required>
+                    <button class="btn-solid-reg" type="submit" name="submit" id="button">SUBMIT</button> 
                 </form>
-				<Button class="btn-solid-reg" type="submit" name="submit" id="button">SUBMIT</Button> 
+				
 			</div>
 		</div> <!-- end of row -->
     </div> <!-- end of lightbox-basic -->
