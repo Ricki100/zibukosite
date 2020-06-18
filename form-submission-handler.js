@@ -1,5 +1,5 @@
 
-$('#form').submit(function(e) {
+$('#funda,#yambuka,#rongeka,#utano,#kura').submit(function(e) {
     e.preventDefault();
     
     $.ajax({
