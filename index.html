@@ -825,8 +825,8 @@
     <!-- end of statistics -->
 
 
-    <!-- Contact -->
-    <div id="contact" class="form">
+     <!-- Contact -->
+     <div id="contact" class="form">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -846,19 +846,21 @@
                 <div class="col-lg-6 offset-lg-3">
                     
                     <!-- Contact Form -->
-                    <form id="contactForm" data-toggle="validator" data-focus="false">
+                    <form id="contactForm" data-toggle="validator" data-focus="false" method="POST" data-email="example@email.net"
+                    action="https://script.google.com/macros/s/AKfycbwQHm8G8ZPmOlbDxVcNPmGILJs_Xg3vnjoCmRYPTQ/exec" onsubmit="setTimeout (contact, 2000);">
                         <div class="form-group">
-                            <input type="text" class="form-control-input" id="cname" required>
-                            <label class="label-control" for="cname">Name</label>
+                            <input  name="type" type="text" Value="ENQUIRY" class="input" required style="position:absolute; visibility: hidden;">
+                            <input type="text" name="fname" class="form-control-input" id="cname" required>
+                            <label class="label-control" for="cname" >Name</label>
                             <div class="help-block with-errors"></div>
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control-input" id="cemail" required>
+                            <input type="email" name="email"class="form-control-input" id="cemail" required>
                             <label class="label-control" for="cemail">Email</label>
                             <div class="help-block with-errors"></div>
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control-textarea" id="cmessage" required></textarea>
+                            <textarea class="form-control-textarea" name="message" id="cmessage" required></textarea>
                             <label class="label-control" for="cmessage">Your message</label>
                             <div class="help-block with-errors"></div>
                         </div>
@@ -969,8 +971,26 @@
     <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
     <script src="js/wow.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script data-cfasync="false" type="text/javascript"
+    src="form-submission-handler.js"></script>
     <script>
         new WOW().init();
         </script>
+        
+<script>
+function phonenumber(inputtxt){
+    var phoneno = /^\+?([0-9]{2})\)?[-. ]?([0-9]{4})[-. ]?([0-9]{4})$/;
+    if((inputtxt.value.match(phoneno)) {
+        return true;
+          }
+        else
+          {
+          alert("message");
+          return false;
+          }
+  }
+</script>
+  
 </body>
 </html>

@@ -1,5 +1,5 @@
 
-$('#funda,#yambuka,#rongeka,#utano,#kura').submit(function(e) {
+$('#funda,#yambuka,#rongeka,#utano,#kura,#contactForm').submit(function(e) {
     e.preventDefault();
     
     $.ajax({
@@ -21,6 +21,20 @@ $('#funda,#yambuka,#rongeka,#utano,#kura').submit(function(e) {
       position: 'center',
       icon: 'success',
       title: 'Thank you for your application. We will get back to you shortly',
+      showConfirmButton: false,
+      timer: 4000
+  })
+  $( "#button" ).prop( "disabled", true );
+  $( "input" ).prop( "disabled", true );
+  $( "#button" ).css( {"background-color":"red"},{"border":"0px"});
+  }
+
+
+  function contact(){
+    Swal.fire({
+      position: 'center',
+      icon: 'success',
+      title: 'Thank you for contacting us. We will get back to you shortly',
       showConfirmButton: false,
       timer: 4000
   })
@@ -54,7 +68,7 @@ function ValidateEmail() {
 	lblError.innerHTML = "";
 	var expr = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
 	if (!expr.test(email)) {
-		lblError.innerHTML = "Invalid email address.";
+		lblError.innerHTML = "Invalid email address. Application will not submit";
 	}
 }
 
