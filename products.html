@@ -274,7 +274,7 @@
                     <input  name="loan-term" type="number" onkeypress="phonenumber" placeholder="Loan term in months" class="input" required>
                     <input  name="company-name" type="text" placeholder="Name of employer or company" class="input" required>
                     <label for="work-start-date">When did you start working?</label>
-                    <input  name="Work-start-date" type="date" placeholder="When did you start working?" class="input" required>
+                    <input  name="work-start-date" type="date" placeholder="When did you start working?" class="input" required>
                     <div >Type of employment contract</div>
                     <div class="input">
                       
@@ -302,21 +302,34 @@
 				<img class="img-fluid" src="images/details-lightbox-2.png" alt="alternative">
 			</div>
 			<div class="col-lg-6">
-				<h3>Yambuka</h3>
-				<hr>
-                <p>The calendar input function enables the user to setup training, meditation and relaxation sessions with ease.</p>
-                <h4>User Feedback</h4>
-                <p>This is a great app which can help you save time and make your live easier. And it will help improve your productivity levels.</p>
-                <p>You should definitely give it a try when you need a good app.</p>
-				<table>
-					<tr><td class="icon-cell"><i class="fas fa-desktop"></i></td><td>Responsive layout</td></tr>
-					<tr><td class="icon-cell"><i class="fas fa-bullhorn"></i></td><td>Distinctive CTAs</td></tr>
-					<tr><td class="icon-cell"><i class="fas fa-image"></i></td><td>Image gallery slider</td></tr>
-					<tr><td class="icon-cell"><i class="fas fa-envelope"></i></td><td>Contact forms</td></tr>
-					<tr><td class="icon-cell"><i class="fab fa-font-awesome-flag"></i></td><td>FontAwesome icons</td></tr>
-					<tr><td class="icon-cell"><i class="fas fa-code"></i></td><td>Well-structured code</td></tr>
-				</table>
-				<a class="btn-solid-reg" href="#your-link">DETAILS</a> <a class="btn-outline-reg mfp-close as-button" href="#details">BACK</a>
+                <form id="form" name="form1" class="contact gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
+                action="https://script.google.com/macros/s/AKfycbwQHm8G8ZPmOlbDxVcNPmGILJs_Xg3vnjoCmRYPTQ/exec" onsubmit="setTimeout (validateForm, 2000);">
+                    <input  name="type" type="text" Value="YAMBUKA LOAN" class="input" required style="position:absolute; visibility: hidden;">
+                    <input  name="fname" type="text" placeholder="First Name" class="input" required>
+                    <input  name="lname" type="text" placeholder="Last Name" class="input" required>
+                    <input  name="id" type="text" placeholder="ID Number" class="input" required>
+                    <input  name="address" type="text" placeholder="Address" class="input" required>
+                    <input  name="cell" type="number" onkeypress="phonenumber" placeholder="Cell Number" class="input" required>
+                    <input  name="email" type="email" placeholder="Email" id="email" class="input" onkeyup="ValidateEmail()" required>
+                    <span id="lblError" style="color: red"></span>
+                    <input type="text" class="input" name="loan-amount" id="currency-field" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency" placeholder="Loan Amount" required>
+                    <input  name="loan-term" type="number" onkeypress="phonenumber" placeholder="Loan term in months" class="input" required>
+                    <input  name="company-name" type="text" placeholder="Name of employer or company" class="input" required>
+                    <label for="work-start-date">When did you start working?</label>
+                    <input  name="work-start-date" type="date" placeholder="When did you start working?" class="input" required>
+                    <div >Type of employment contract</div>
+                    <div class="input">
+                      
+                        <input type="radio" id="contract" name="employment-contract" style="width: 50px !important;" value="Permanent">Permanent
+                        <input type="radio" id="contract" name="employment-contract" style="width: 50px !important;" value="Contract">Contract
+                </div>
+
+                <label for="contract-end-date">Contract End Date</label>
+                    <input name="contract-end-date" type="date" class="input" required>
+                    <input type="text" name="job-title" type="text" placeholder="What do you do for a living?" class="input" required>
+                    <input type="text" name="salary" id="currency-field" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency" class="input" placeholder="Salary" required>
+                    <button class="btn-solid-reg" type="submit" name="submit" id="button">SUBMIT</button> 
+                </form>
 			</div>
 		</div> <!-- end of row -->
     </div> <!-- end of lightbox-basic -->
