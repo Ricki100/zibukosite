@@ -270,7 +270,7 @@
                     <input  name="cell" type="number" onkeypress="phonenumber" placeholder="Cell Number" class="input" required>
                     <input  name="email" type="email" placeholder="Email" id="email" class="input" onkeyup="ValidateEmail()" required>
                     <span id="lblError" style="color: red"></span>
-                    <input  name="loan-amount" type="number" onkeypress="phonenumber" placeholder="Loan amount" class="input amount" required>
+                    <input type="text" class="input" name="loan-amount" id="currency-field" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency" placeholder="Loan Amount" required>
                     <input  name="loan-term" type="number" onkeypress="phonenumber" placeholder="Loan term in months" class="input" required>
                     <input  name="company-name" type="text" placeholder="Name of employer or company" class="input" required>
                     <label for="work-start-date">When did you start working?</label>
@@ -285,7 +285,7 @@
                 <label for="contract-end-date">Contract End Date</label>
                     <input name="contract-end-date" type="date" class="input" required>
                     <input type="text" name="job-title" type="text" placeholder="What do you do for a living?" class="input" required>
-                    <input  name="salary" type="number" onkeypress="phonenumber" placeholder="Monthly Salary" class="input" required>
+                    <input type="text" name="salary" id="currency-field" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency" class="input" placeholder="Salary" required>
                     <button class="btn-solid-reg" type="submit" name="submit" id="button">SUBMIT</button> 
                 </form>
 				
