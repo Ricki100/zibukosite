@@ -2288,6 +2288,42 @@ a:hover.back-to-top {
 /* end of min-width width 1200px */
 
 
+@media (max-width: 1600px) {
+	/* Header */
+	.header .text-container {
+		margin-top: 0rem;
+		margin-left: 2.5rem;
+	}
+
+	.header .image-container {
+		margin-left: 3rem;
+		margin-top: 5rem;
+		width: 600px;
+		height: 500px;
+	}
+
+		#features{
+			margin-top: 0;
+		}
+
+		.basic-1{
+			margin-top: 0;
+		}
+
+		.image-container.product-header{
+			margin-top: 0rem;
+		}
+
+		.product-margin{
+			margin-top: 0;
+			margin-bottom: 100px;
+		}
+
+	
+	}
+
+	/* end of header */
+
 .input{
 	border-radius: 5px;
 width: 300px;
