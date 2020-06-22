@@ -2338,3 +2338,7 @@ margin-bottom: 10px;
 label{
 	color: white;
 }
+
+.main{
+	display: none;
+}
