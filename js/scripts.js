@@ -378,12 +378,27 @@ function startSlideshow(){
     $(".main.one").fadeIn(1000).delay(3500).fadeOut(1500); //13000
     $(".main.two").delay(6500).fadeIn(1500).delay(3500).fadeOut(1500); //27000
     $(".main.three").delay(13000).fadeIn(1500).delay(3500).fadeOut(1500); //41000
-    $(".main.four").delay(20000).fadeIn(1500).delay(3500).fadeOut(1500, startSlideshow); //55000
+    $(".main.four").delay(20000).fadeIn(1500).delay(3500).fadeOut(1500); //41000
+    $(".main.five").delay(26500).fadeIn(1500).delay(3500).fadeOut(1500, startSlideshow); //55000
   }
 
   $(document).ready(function(){
     startSlideshow();
   });
+
+
+  function loop(){
+    $(".main.a").fadeIn(1000).delay(3500).fadeOut(1500); //13000
+    $(".main.b").delay(6500).fadeIn(1500).delay(3500).fadeOut(1500); //27000
+    $(".main.c").delay(13000).fadeIn(1500).delay(3500).fadeOut(1500); //41000
+    $(".main.d").delay(20000).fadeIn(1500).delay(3500).fadeOut(1500); //41000
+    $(".main.e").delay(26500).fadeIn(1500).delay(3500).fadeOut(1500, loop); //55000
+  }
+
+  $(document).ready(function(){
+    loop();
+  });
+
 
 
 
