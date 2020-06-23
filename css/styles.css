@@ -1112,18 +1112,27 @@ font-weight: bold;
 .product-kura{
 	padding-top: 300px;
 	padding-bottom: 300px;
+	background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('../images/kura-back.jpg') center center no-repeat;
+	background-size: cover;
 }
 .product-utano{
 	padding-top: 300px;
 	padding-bottom: 300px;
+	background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('../images/funda-back.jpg') center center no-repeat;
+	background-size: cover;
 }
 .product-yambuka{
 	padding-top: 300px;
 	padding-bottom: 300px;
+	background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('../images/yambuka-back.jpg') center center no-repeat;
+	background-size: cover;
+
 }
 .product-rongeka{
 	margin-top: 300px;
 	margin-bottom: 300px;
+	background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('../images/funda-back.jpg') center center no-repeat;
+	background-size: cover;
 }
 
 .basic-1 h2 {
