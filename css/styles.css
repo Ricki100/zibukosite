@@ -811,7 +811,16 @@ input[type='checkbox'] {
 	padding-top: 10rem;
 	padding-bottom: 10rem;
 	background: #272E6C;
+	position: relative;
 
+}
+
+.thought{
+	width: 400px;
+	height: auto;
+	position: absolute;
+	left: 0;
+	bottom: 0;
 }
 
 .slider-1 h2{

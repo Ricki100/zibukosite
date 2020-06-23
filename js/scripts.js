@@ -375,10 +375,10 @@
 })(jQuery);
 
 function startSlideshow(){
-    $(".main.one").fadeIn(1000).delay(10500).fadeOut(1500); //13000
-    $(".main.two").delay(13000).fadeIn(1500).delay(11000).fadeOut(1500); //27000
-    $(".main.three").delay(27000).fadeIn(1500).delay(11000).fadeOut(1500); //41000
-    $(".main.four").delay(41000).fadeIn(1500).delay(11000).fadeOut(1500, startSlideshow); //55000
+    $(".main.one").fadeIn(1000).delay(3500).fadeOut(1500); //13000
+    $(".main.two").delay(6500).fadeIn(1500).delay(3500).fadeOut(1500); //27000
+    $(".main.three").delay(13000).fadeIn(1500).delay(3500).fadeOut(1500); //41000
+    $(".main.four").delay(20000).fadeIn(1500).delay(3500).fadeOut(1500, startSlideshow); //55000
   }
 
   $(document).ready(function(){
