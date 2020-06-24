@@ -3,7 +3,7 @@ $('#funda,#yambuka,#rongeka,#utano,#kura,#contactForm').submit(function(e) {
     e.preventDefault();
     
     $.ajax({
-        url: "https://script.google.com/macros/s/AKfycbwQHm8G8ZPmOlbDxVcNPmGILJs_Xg3vnjoCmRYPTQ/exec",
+        url: "https://script.google.com/macros/s/AKfycbwtFYOvewQHx9rza-DxVmtT5olGNeX7qh3B59U9wgpneFOcm0aa/exec",
         data: $(this).serialize(),
         type: "POST",
         dataType: "xml",
