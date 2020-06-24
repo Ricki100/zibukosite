@@ -400,5 +400,19 @@ function startSlideshow(){
   });
 
 
+    $(".next").click(function(){
+        $(".personal-details").hide();
+        $(".next-of-kin").show();
+
+      });
+
+      $(".back").click(function(){
+        $(".personal-details").show();
+        $(".next-of-kin").hide();
+
+      });
+  
+
+
 
 

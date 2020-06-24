@@ -2427,3 +2427,9 @@ form{
 display: block;
 margin: 20px auto;
 }
+
+
+
+form h1{
+	text-align: center;
+}
