@@ -8,7 +8,11 @@ $('#funda,#yambuka,#rongeka,#utano,#kura,#contactForm').submit(function(e) {
         type: "POST",
         dataType: "xml",
         success: function(data) {
-       
+          document.getElementById("funda").reset();
+          document.getElementById("yambuka").reset();
+          document.getElementById("rongeka").reset();
+          document.getElementById("utano").reset();
+          document.getElementById("kura").reset();
         },
         error: function(xhr, status, error) {
             console.log('Submission failed: ' + error);
@@ -25,7 +29,7 @@ $('#funda,#yambuka,#rongeka,#utano,#kura,#contactForm').submit(function(e) {
       timer: 4000
   })
   $( "#button" ).prop( "disabled", true );
-  $( "input" ).prop( "disabled", true );
+  $("input").val(" ");
   $( "#button" ).css( {"background-color":"red"},{"border":"0px"});
   }
 
@@ -39,7 +43,9 @@ $('#funda,#yambuka,#rongeka,#utano,#kura,#contactForm').submit(function(e) {
       timer: 4000
   })
   $( "#button" ).prop( "disabled", true );
-  $( "input" ).prop( "disabled", true );
+  
+
+
   $( "#button" ).css( {"background-color":"red"},{"border":"0px"});
   }
   
