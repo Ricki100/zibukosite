@@ -276,7 +276,7 @@
                         <h3>PERSONAL DETAILS</h3>
                     <input  name="fname" type="text" placeholder="First Name" class="input" required>
                     <input  name="lname" type="text" placeholder="Last Name" class="input" required>
-                    <input placeholder="Date of birth" name="dob" class="input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date" required/>
+                    <input placeholder="Date of birth" name="dob" class="input" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date" required/>
               
                     <input  name="id" type="text" placeholder="ID Number" class="input" required>
                     
@@ -362,31 +362,79 @@
                 <form id="yambuka" name="form1" class="contact gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
                 action="https://script.google.com/macros/s/AKfycbwtFYOvewQHx9rza-DxVmtT5olGNeX7qh3B59U9wgpneFOcm0aa/exec" onsubmit="setTimeout (validateForm, 2000);">
                     <input  name="type" type="text" Value="YAMBUKA LOAN" class="input" required style="position:absolute; visibility: hidden;">
-                    <input  name="fname" type="text" placeholder="First Name" class="input" required>
-                    <input  name="lname" type="text" placeholder="Last Name" class="input" required>
-                    <input  name="id" type="text" placeholder="ID Number" class="input" required>
-                    <input  name="address" type="text" placeholder="Address" class="input" required>
-                    <input  name="cell" type="number" onkeypress="phonenumber" placeholder="Cell Number" class="input" required>
-                    <input  name="email" type="email" placeholder="Email" id="email" class="input" onkeyup="ValidateEmail()" required>
-                    <span id="lblError" style="color: red"></span>
-                    <input type="text" class="input" name="loan-amount" id="currency-field" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency" placeholder="Loan Amount" required>
-                    <input  name="loan-term" type="number" onkeypress="phonenumber" placeholder="Loan term in months" class="input" required>
-                    <input  name="company-name" type="text" placeholder="Name of employer or company" class="input" required>
-                    <label for="work-start-date">When did you start working?</label>
-                    <input  name="work-start-date" type="date" placeholder="When did you start working?" class="input" required>
-                    <div >Type of employment contract</div>
-                    <div class="input">
+                    <div class="personal-details">
+                            <h3>PERSONAL DETAILS</h3>
+                        <input  name="fname" type="text" placeholder="First Name" class="input" required>
+                        <input  name="lname" type="text" placeholder="Last Name" class="input" required>
+                        <input placeholder="Date of birth" name="dob" class="input" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date" required/>
+                  
+                        <input  name="id" type="text" placeholder="ID Number" class="input" required>
+                        
+                        <select name="marital-status" class="input" required>
+                                <option value="" disabled selected>Marital status</option>
+                            <option value="Single">Single</option>
+                            <option value="Married">Married</option>
+                          </select>
+                        <select name="gender" class="input" required>
+                                <option value="" disabled selected>Gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                          </select>
+                          <input  name="age" type="number" onkeypress="phonenumber" placeholder="Age" class="input" required>
+                        <input  name="address" type="text" placeholder="Address" class="input" required>
+                        <input  name="cell" type="number" onkeypress="phonenumber" placeholder="Cell Number" class="input" required>
+                        <input  name="email" type="email" placeholder="Email" id="email" class="input" onkeyup="ValidateEmail()" required>
+                        <span id="lblError" style="color: red"></span>
+                        <!--<input type="text" class="input" name="loan-amount" id="currency-field" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency" placeholder="Loan Amount" required>-->
                       
-                        <input type="radio" id="contract" name="employment-contract" style="width: 50px !important;" value="Permanent">Permanent
-                        <input type="radio" id="contract" name="employment-contract" style="width: 50px !important;" value="Contract">Contract
-                </div>
-
-                <label for="contract-end-date">Contract End Date</label>
-                    <input name="contract-end-date" type="date" class="input" required>
-                    <input type="text" name="job-title" type="text" placeholder="What do you do for a living?" class="input" required>
-                    <input type="text" name="salary" id="currency-field" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency" class="input" placeholder="Salary" required>
-                    <button class="btn-solid-reg" type="submit"  id="button">SUBMIT</button> 
-                </form>
+                        </div>
+    
+    
+                        <div class="next-of-kin">
+                        <h3>NEXT OF KIN DETAILS</h3>
+                        <input  name="kin-fullname" type="text" placeholder="Full Name" class="input" required>
+                        <input  name="kin-address" type="text" placeholder="Address" class="input" required>
+                        <input  name="relationship" type="text" placeholder="Relationship" class="input" required>
+                        <input  name="kin-cell" type="number" onkeypress="phonenumber" placeholder="Cell Number" class="input" required>
+                    </div>
+    
+                        <div class="employment">
+                        <h3>EMPLOYMENT DETAILS</h3>
+                        <input  name="employer-name" type="text" placeholder="Employer's name" class="input" required>
+                        <input  name="work-address" type="text" placeholder="Work Address" class="input" required>
+                        <input  name="job-title" type="text" placeholder="Job Title" class="input" required>
+                        <input  name="employee-number" type="number" onkeypress="phonenumber" placeholder="Employee Number" class="input" required>
+                        <input  name="years-at-work" type="number" onkeypress="phonenumber" placeholder="Number of years at current work" class="input" required>
+                    </div>
+    
+                    <div class="loan-details">
+                        <h3>LOAN DETAILS</h3>
+                        <input  name="loan-amount" type="text" id="currency-field" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency" placeholder="Loan amount applied for" class="input" required>
+                        <select name="payment-period" class="input" placeholder="Payment Period" required>
+                                <option value="" disabled selected>Payment Period</option>
+                            <option value="2 months">2 months</option>
+                            <option value="4 months">4 months</option>
+                            <option value="6 months">6 months</option>
+                            <option value="8 months">8 months</option>
+                            <option value="10 months">10 months</option>
+                            <option value="12 months">12 months</option>
+                            </select>
+                            <input  name="loan-purpose" type="text" placeholder="Loan Purpose" class="input" required>
+                            <select name="payment-method" class="input" placeholder="Payment Method" required>
+                                    <option value="" disabled selected>Payment Method</option>
+                                <option value="Cash">Cash</option>
+                                <option value="Bank Transfer">Bank Transfer</option>
+                               </select> 
+                               <h3>BANK DETAILS</h3>   
+                               <input  name="branch-name" type="text" placeholder="Branch Name" class="input" required>
+                               <input  name="branch-code" type="text" placeholder="Branch Code" class="input" required>
+                               <input  name="account-number" type="text" onkeypress="phonenumber" placeholder="Account Number" class="input" required>
+                               <input  name="ecocash-number" type="text" onkeypress="phonenumber" placeholder="Ecocash Number" class="input" required>
+                               <input  name="reg-name" type="text" placeholder="Registered Name" class="input" require>
+                    </div>
+    
+    <button class="btn-solid-reg" type="submit"  id="button">SUBMIT</button>  
+                    </form>
 			</div>
 		</div> <!-- end of row -->
     </div> <!-- end of lightbox-basic -->
@@ -402,31 +450,79 @@
                 <form id="kura" name="form1" class="contact gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
                 action="https://script.google.com/macros/s/AKfycbwtFYOvewQHx9rza-DxVmtT5olGNeX7qh3B59U9wgpneFOcm0aa/exec" onsubmit="setTimeout (validateForm, 2000);">
                     <input  name="type" type="text" Value="KURA LOAN" class="input" required style="position:absolute; visibility: hidden;">
-                    <input  name="fname" type="text" placeholder="First Name" class="input" required>
-                    <input  name="lname" type="text" placeholder="Last Name" class="input" required>
-                    <input  name="id" type="text" placeholder="ID Number" class="input" required>
-                    <input  name="address" type="text" placeholder="Address" class="input" required>
-                    <input  name="cell" type="number" onkeypress="phonenumber" placeholder="Cell Number" class="input" required>
-                    <input  name="email" type="email" placeholder="Email" id="email" class="input" onkeyup="ValidateEmail()" required>
-                    <span id="lblError" style="color: red"></span>
-                    <input type="text" class="input" name="loan-amount" id="currency-field" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency" placeholder="Loan Amount" required>
-                    <input  name="loan-term" type="number" onkeypress="phonenumber" placeholder="Loan term in months" class="input" required>
-                    <input  name="company-name" type="text" placeholder="Name of employer or company" class="input" required>
-                    <label for="work-start-date">When did you start working?</label>
-                    <input  name="work-start-date" type="date" placeholder="When did you start working?" class="input" required>
-                    <div >Type of employment contract</div>
-                    <div class="input">
+                    <div class="personal-details">
+                            <h3>PERSONAL DETAILS</h3>
+                        <input  name="fname" type="text" placeholder="First Name" class="input" required>
+                        <input  name="lname" type="text" placeholder="Last Name" class="input" required>
+                        <input placeholder="Date of birth" name="dob" class="input" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date" required/>
+                  
+                        <input  name="id" type="text" placeholder="ID Number" class="input" required>
+                        
+                        <select name="marital-status" class="input" required>
+                                <option value="" disabled selected>Marital status</option>
+                            <option value="Single">Single</option>
+                            <option value="Married">Married</option>
+                          </select>
+                        <select name="gender" class="input" required>
+                                <option value="" disabled selected>Gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                          </select>
+                          <input  name="age" type="number" onkeypress="phonenumber" placeholder="Age" class="input" required>
+                        <input  name="address" type="text" placeholder="Address" class="input" required>
+                        <input  name="cell" type="number" onkeypress="phonenumber" placeholder="Cell Number" class="input" required>
+                        <input  name="email" type="email" placeholder="Email" id="email" class="input" onkeyup="ValidateEmail()" required>
+                        <span id="lblError" style="color: red"></span>
+                        <!--<input type="text" class="input" name="loan-amount" id="currency-field" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency" placeholder="Loan Amount" required>-->
                       
-                        <input type="radio" id="contract" name="employment-contract" style="width: 50px !important;" value="Permanent">Permanent
-                        <input type="radio" id="contract" name="employment-contract" style="width: 50px !important;" value="Contract">Contract
-                </div>
-
-                <label for="contract-end-date">Contract End Date</label>
-                    <input name="contract-end-date" type="date" class="input" required>
-                    <input type="text" name="job-title" type="text" placeholder="What do you do for a living?" class="input" required>
-                    <input type="text" name="salary" id="currency-field" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency" class="input" placeholder="Salary" required>
-                    <button class="btn-solid-reg" type="submit"  id="button">SUBMIT</button> 
-                </form>
+                        </div>
+    
+    
+                        <div class="next-of-kin">
+                        <h3>NEXT OF KIN DETAILS</h3>
+                        <input  name="kin-fullname" type="text" placeholder="Full Name" class="input" required>
+                        <input  name="kin-address" type="text" placeholder="Address" class="input" required>
+                        <input  name="relationship" type="text" placeholder="Relationship" class="input" required>
+                        <input  name="kin-cell" type="number" onkeypress="phonenumber" placeholder="Cell Number" class="input" required>
+                    </div>
+    
+                        <div class="employment">
+                        <h3>EMPLOYMENT DETAILS</h3>
+                        <input  name="employer-name" type="text" placeholder="Employer's name" class="input" required>
+                        <input  name="work-address" type="text" placeholder="Work Address" class="input" required>
+                        <input  name="job-title" type="text" placeholder="Job Title" class="input" required>
+                        <input  name="employee-number" type="number" onkeypress="phonenumber" placeholder="Employee Number" class="input" required>
+                        <input  name="years-at-work" type="number" onkeypress="phonenumber" placeholder="Number of years at current work" class="input" required>
+                    </div>
+    
+                    <div class="loan-details">
+                        <h3>LOAN DETAILS</h3>
+                        <input  name="loan-amount" type="text" id="currency-field" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency" placeholder="Loan amount applied for" class="input" required>
+                        <select name="payment-period" class="input" placeholder="Payment Period" required>
+                                <option value="" disabled selected>Payment Period</option>
+                            <option value="2 months">2 months</option>
+                            <option value="4 months">4 months</option>
+                            <option value="6 months">6 months</option>
+                            <option value="8 months">8 months</option>
+                            <option value="10 months">10 months</option>
+                            <option value="12 months">12 months</option>
+                            </select>
+                            <input  name="loan-purpose" type="text" placeholder="Loan Purpose" class="input" required>
+                            <select name="payment-method" class="input" placeholder="Payment Method" required>
+                                    <option value="" disabled selected>Payment Method</option>
+                                <option value="Cash">Cash</option>
+                                <option value="Bank Transfer">Bank Transfer</option>
+                               </select> 
+                               <h3>BANK DETAILS</h3>   
+                               <input  name="branch-name" type="text" placeholder="Branch Name" class="input" required>
+                               <input  name="branch-code" type="text" placeholder="Branch Code" class="input" required>
+                               <input  name="account-number" type="text" onkeypress="phonenumber" placeholder="Account Number" class="input" required>
+                               <input  name="ecocash-number" type="text" onkeypress="phonenumber" placeholder="Ecocash Number" class="input" required>
+                               <input  name="reg-name" type="text" placeholder="Registered Name" class="input" require>
+                    </div>
+    
+    <button class="btn-solid-reg" type="submit"  id="button">SUBMIT</button>  
+                    </form>
 			</div>
 		</div> <!-- end of row -->
     </div> <!-- end of lightbox-basic -->
@@ -442,31 +538,79 @@
                 <form id="rongeka" name="form1" class="contact gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
                 action="https://script.google.com/macros/s/AKfycbwtFYOvewQHx9rza-DxVmtT5olGNeX7qh3B59U9wgpneFOcm0aa/exec" onsubmit="setTimeout (validateForm, 2000);">
                     <input  name="type" type="text" Value="RONGEKA LOAN" class="input" required style="position:absolute; visibility: hidden;">
-                    <input  name="fname" type="text" placeholder="First Name" class="input" required>
-                    <input  name="lname" type="text" placeholder="Last Name" class="input" required>
-                    <input  name="id" type="text" placeholder="ID Number" class="input" required>
-                    <input  name="address" type="text" placeholder="Address" class="input" required>
-                    <input  name="cell" type="number" onkeypress="phonenumber" placeholder="Cell Number" class="input" required>
-                    <input  name="email" type="email" placeholder="Email" id="email" class="input" onkeyup="ValidateEmail()" required>
-                    <span id="lblError" style="color: red"></span>
-                    <input type="text" class="input" name="loan-amount" id="currency-field" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency" placeholder="Loan Amount" required>
-                    <input  name="loan-term" type="number" onkeypress="phonenumber" placeholder="Loan term in months" class="input" required>
-                    <input  name="company-name" type="text" placeholder="Name of employer or company" class="input" required>
-                    <label for="work-start-date">When did you start working?</label>
-                    <input  name="work-start-date" type="date" placeholder="When did you start working?" class="input" required>
-                    <div >Type of employment contract</div>
-                    <div class="input">
+                    <div class="personal-details">
+                            <h3>PERSONAL DETAILS</h3>
+                        <input  name="fname" type="text" placeholder="First Name" class="input" required>
+                        <input  name="lname" type="text" placeholder="Last Name" class="input" required>
+                        <input placeholder="Date of birth" name="dob" class="input" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date" required/>
+                  
+                        <input  name="id" type="text" placeholder="ID Number" class="input" required>
+                        
+                        <select name="marital-status" class="input" required>
+                                <option value="" disabled selected>Marital status</option>
+                            <option value="Single">Single</option>
+                            <option value="Married">Married</option>
+                          </select>
+                        <select name="gender" class="input" required>
+                                <option value="" disabled selected>Gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                          </select>
+                          <input  name="age" type="number" onkeypress="phonenumber" placeholder="Age" class="input" required>
+                        <input  name="address" type="text" placeholder="Address" class="input" required>
+                        <input  name="cell" type="number" onkeypress="phonenumber" placeholder="Cell Number" class="input" required>
+                        <input  name="email" type="email" placeholder="Email" id="email" class="input" onkeyup="ValidateEmail()" required>
+                        <span id="lblError" style="color: red"></span>
+                        <!--<input type="text" class="input" name="loan-amount" id="currency-field" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency" placeholder="Loan Amount" required>-->
                       
-                        <input type="radio" id="contract" name="employment-contract" style="width: 50px !important;" value="Permanent">Permanent
-                        <input type="radio" id="contract" name="employment-contract" style="width: 50px !important;" value="Contract">Contract
-                </div>
-
-                <label for="contract-end-date">Contract End Date</label>
-                    <input name="contract-end-date" type="date" class="input" required>
-                    <input type="text" name="job-title" type="text" placeholder="What do you do for a living?" class="input" required>
-                    <input type="text" name="salary" id="currency-field" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency" class="input" placeholder="Salary" required>
-                    <button class="btn-solid-reg" type="submit"  id="button">SUBMIT</button> 
-                </form>
+                        </div>
+    
+    
+                        <div class="next-of-kin">
+                        <h3>NEXT OF KIN DETAILS</h3>
+                        <input  name="kin-fullname" type="text" placeholder="Full Name" class="input" required>
+                        <input  name="kin-address" type="text" placeholder="Address" class="input" required>
+                        <input  name="relationship" type="text" placeholder="Relationship" class="input" required>
+                        <input  name="kin-cell" type="number" onkeypress="phonenumber" placeholder="Cell Number" class="input" required>
+                    </div>
+    
+                        <div class="employment">
+                        <h3>EMPLOYMENT DETAILS</h3>
+                        <input  name="employer-name" type="text" placeholder="Employer's name" class="input" required>
+                        <input  name="work-address" type="text" placeholder="Work Address" class="input" required>
+                        <input  name="job-title" type="text" placeholder="Job Title" class="input" required>
+                        <input  name="employee-number" type="number" onkeypress="phonenumber" placeholder="Employee Number" class="input" required>
+                        <input  name="years-at-work" type="number" onkeypress="phonenumber" placeholder="Number of years at current work" class="input" required>
+                    </div>
+    
+                    <div class="loan-details">
+                        <h3>LOAN DETAILS</h3>
+                        <input  name="loan-amount" type="text" id="currency-field" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency" placeholder="Loan amount applied for" class="input" required>
+                        <select name="payment-period" class="input" placeholder="Payment Period" required>
+                                <option value="" disabled selected>Payment Period</option>
+                            <option value="2 months">2 months</option>
+                            <option value="4 months">4 months</option>
+                            <option value="6 months">6 months</option>
+                            <option value="8 months">8 months</option>
+                            <option value="10 months">10 months</option>
+                            <option value="12 months">12 months</option>
+                            </select>
+                            <input  name="loan-purpose" type="text" placeholder="Loan Purpose" class="input" required>
+                            <select name="payment-method" class="input" placeholder="Payment Method" required>
+                                    <option value="" disabled selected>Payment Method</option>
+                                <option value="Cash">Cash</option>
+                                <option value="Bank Transfer">Bank Transfer</option>
+                               </select> 
+                               <h3>BANK DETAILS</h3>   
+                               <input  name="branch-name" type="text" placeholder="Branch Name" class="input" required>
+                               <input  name="branch-code" type="text" placeholder="Branch Code" class="input" required>
+                               <input  name="account-number" type="text" onkeypress="phonenumber" placeholder="Account Number" class="input" required>
+                               <input  name="ecocash-number" type="text" onkeypress="phonenumber" placeholder="Ecocash Number" class="input" required>
+                               <input  name="reg-name" type="text" placeholder="Registered Name" class="input" require>
+                    </div>
+    
+    <button class="btn-solid-reg" type="submit"  id="button">SUBMIT</button>  
+                    </form>
 			</div>
 		</div> <!-- end of row -->
     </div> <!-- end of lightbox-basic -->
@@ -482,31 +626,79 @@
                 <form id="UTANO" name="form1" class="contact gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
                 action="https://script.google.com/macros/s/AKfycbwtFYOvewQHx9rza-DxVmtT5olGNeX7qh3B59U9wgpneFOcm0aa/exec" onsubmit="setTimeout (validateForm, 2000);">
                     <input  name="type" type="text" Value="YAMBUKA LOAN" class="input" required style="position:absolute; visibility: hidden;">
-                    <input  name="fname" type="text" placeholder="First Name" class="input" required>
-                    <input  name="lname" type="text" placeholder="Last Name" class="input" required>
-                    <input  name="id" type="text" placeholder="ID Number" class="input" required>
-                    <input  name="address" type="text" placeholder="Address" class="input" required>
-                    <input  name="cell" type="number" onkeypress="phonenumber" placeholder="Cell Number" class="input" required>
-                    <input  name="email" type="email" placeholder="Email" id="email" class="input" onkeyup="ValidateEmail()" required>
-                    <span id="lblError" style="color: red"></span>
-                    <input type="text" class="input" name="loan-amount" id="currency-field" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency" placeholder="Loan Amount" required>
-                    <input  name="loan-term" type="number" onkeypress="phonenumber" placeholder="Loan term in months" class="input" required>
-                    <input  name="company-name" type="text" placeholder="Name of employer or company" class="input" required>
-                    <label for="work-start-date">When did you start working?</label>
-                    <input  name="work-start-date" type="date" placeholder="When did you start working?" class="input" required>
-                    <div >Type of employment contract</div>
-                    <div class="input">
+                    <div class="personal-details">
+                            <h3>PERSONAL DETAILS</h3>
+                        <input  name="fname" type="text" placeholder="First Name" class="input" required>
+                        <input  name="lname" type="text" placeholder="Last Name" class="input" required>
+                        <input placeholder="Date of birth" name="dob" class="input" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date" required/>
+                  
+                        <input  name="id" type="text" placeholder="ID Number" class="input" required>
+                        
+                        <select name="marital-status" class="input" required>
+                                <option value="" disabled selected>Marital status</option>
+                            <option value="Single">Single</option>
+                            <option value="Married">Married</option>
+                          </select>
+                        <select name="gender" class="input" required>
+                                <option value="" disabled selected>Gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                          </select>
+                          <input  name="age" type="number" onkeypress="phonenumber" placeholder="Age" class="input" required>
+                        <input  name="address" type="text" placeholder="Address" class="input" required>
+                        <input  name="cell" type="number" onkeypress="phonenumber" placeholder="Cell Number" class="input" required>
+                        <input  name="email" type="email" placeholder="Email" id="email" class="input" onkeyup="ValidateEmail()" required>
+                        <span id="lblError" style="color: red"></span>
+                        <!--<input type="text" class="input" name="loan-amount" id="currency-field" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency" placeholder="Loan Amount" required>-->
                       
-                        <input type="radio" id="contract" name="employment-contract" style="width: 50px !important;" value="Permanent">Permanent
-                        <input type="radio" id="contract" name="employment-contract" style="width: 50px !important;" value="Contract">Contract
-                </div>
-
-                <label for="contract-end-date">Contract End Date</label>
-                    <input name="contract-end-date" type="date" class="input" required>
-                    <input type="text" name="job-title" type="text" placeholder="What do you do for a living?" class="input" required>
-                    <input type="text" name="salary" id="currency-field" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency" class="input" placeholder="Salary" required>
-                    <button class="btn-solid-reg" type="submit"  id="button">SUBMIT</button> 
-                </form>
+                        </div>
+    
+    
+                        <div class="next-of-kin">
+                        <h3>NEXT OF KIN DETAILS</h3>
+                        <input  name="kin-fullname" type="text" placeholder="Full Name" class="input" required>
+                        <input  name="kin-address" type="text" placeholder="Address" class="input" required>
+                        <input  name="relationship" type="text" placeholder="Relationship" class="input" required>
+                        <input  name="kin-cell" type="number" onkeypress="phonenumber" placeholder="Cell Number" class="input" required>
+                    </div>
+    
+                        <div class="employment">
+                        <h3>EMPLOYMENT DETAILS</h3>
+                        <input  name="employer-name" type="text" placeholder="Employer's name" class="input" required>
+                        <input  name="work-address" type="text" placeholder="Work Address" class="input" required>
+                        <input  name="job-title" type="text" placeholder="Job Title" class="input" required>
+                        <input  name="employee-number" type="number" onkeypress="phonenumber" placeholder="Employee Number" class="input" required>
+                        <input  name="years-at-work" type="number" onkeypress="phonenumber" placeholder="Number of years at current work" class="input" required>
+                    </div>
+    
+                    <div class="loan-details">
+                        <h3>LOAN DETAILS</h3>
+                        <input  name="loan-amount" type="text" id="currency-field" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency" placeholder="Loan amount applied for" class="input" required>
+                        <select name="payment-period" class="input" placeholder="Payment Period" required>
+                                <option value="" disabled selected>Payment Period</option>
+                            <option value="2 months">2 months</option>
+                            <option value="4 months">4 months</option>
+                            <option value="6 months">6 months</option>
+                            <option value="8 months">8 months</option>
+                            <option value="10 months">10 months</option>
+                            <option value="12 months">12 months</option>
+                            </select>
+                            <input  name="loan-purpose" type="text" placeholder="Loan Purpose" class="input" required>
+                            <select name="payment-method" class="input" placeholder="Payment Method" required>
+                                    <option value="" disabled selected>Payment Method</option>
+                                <option value="Cash">Cash</option>
+                                <option value="Bank Transfer">Bank Transfer</option>
+                               </select> 
+                               <h3>BANK DETAILS</h3>   
+                               <input  name="branch-name" type="text" placeholder="Branch Name" class="input" required>
+                               <input  name="branch-code" type="text" placeholder="Branch Code" class="input" required>
+                               <input  name="account-number" type="text" onkeypress="phonenumber" placeholder="Account Number" class="input" required>
+                               <input  name="ecocash-number" type="text" onkeypress="phonenumber" placeholder="Ecocash Number" class="input" required>
+                               <input  name="reg-name" type="text" placeholder="Registered Name" class="input" require>
+                    </div>
+    
+    <button class="btn-solid-reg" type="submit"  id="button">SUBMIT</button>  
+                    </form>
 			</div>
 		</div> <!-- end of row -->
     </div> <!-- end of lightbox-basic -->
