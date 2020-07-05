@@ -375,7 +375,7 @@ input[type='checkbox'] {
 
 .form-control-submit-button {
 	display: inline-block;
-	width: 100%;
+	width: 30%;
 	height: 3.125rem;
 	border: 1px solid #47b44f;
 	border-radius: 1.5rem;
@@ -2417,40 +2417,25 @@ form h1{
 }
 
 #contact-header{
-	border: 2px solid red;
+	border: 0px solid red;
+	margin: 0 auto;
 	margin-top: 200px;
 	padding: 2.125rem 5rem 2.125rem 5rem;
-	height: 100%;
-	width: 	100%;
+	
+	width: 	80%;
 	position: relative;
 	color: black;
+
 }
 
 #contact-header h3,p{
-	color: black;
+	color: #47b44f;
 }
 
-.contact-form{
-	position: absolute;
-	width:500px;
 
-}
-
-.details{
-	position:absolute;
-	left: 700px ;
-
-}
-
-.details.text{
-	margin-top: 50px;
-	position:absolute;
-	left: 0 ;
-	width: 200px;
-}
 
 .details p{
-	line-height: 0.6rem;
+	line-height: normal;
 }
 
 .contact-tabs{
@@ -2458,8 +2443,9 @@ form h1{
 }
 
 .location{
+	width: 40%;
 	display: inline-block;
-	padding: 530px;
+	padding: 100px;
 	padding-top: 30px;
 	padding-bottom: 30px;
 	color: white !important;
@@ -2469,7 +2455,6 @@ form h1{
 
 .harare{
 	background-color: #2f2c3d;
-	
 	display: inline-block;
 	
 }
@@ -2481,15 +2466,38 @@ form h1{
 
 .location span{
 	text-align: center;
+	color: white;
+}
+
+
+.text{
+	margin-top: 50px;
+	display: inline-block;
+	vertical-align: top;
 }
 
 .map{
 	margin-top: 50px;
-	position: absolute;
-	left: 200px;
-	display: block;
+	display: inline-block;
+	vertical-align: top;
 
 }
+
+.contact-form{
+	display: block;
+	margin: 0 auto;
+	width: 70%;
+
+}
+
+.city{
+	line-height: 20px;
+	border: 0px solid red;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+
 
 .tabcontent.bluz {
 	display: none;
@@ -2497,6 +2505,10 @@ form h1{
 
 .location.active {
 	background-color: #47b44f;
+  }
+
+  .header-text{
+	  text-align: center;
   }
 
  
@@ -2536,4 +2548,4 @@ form h1{
 
 	
 	}
-  
+
