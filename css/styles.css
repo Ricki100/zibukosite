@@ -1532,9 +1532,9 @@ text-align: center;
 /*     16. Contact     */
 /***********************/
 .form {
-	padding-top: 6.25rem;
+	padding-top: 4rem;
 	padding-bottom: 5.625rem;
-	background: url('../images/contact-background.jpg') center bottom no-repeat;
+	background:none;
 	background-size: cover; 
 }
 
@@ -2368,39 +2368,7 @@ a:hover.back-to-top {
 /* end of min-width width 1200px */
 
 
-@media (max-width: 1600px) {
-	/* Header */
-	.header .text-container {
-		margin-top: 0rem;
-		margin-left: 2.5rem;
-	}
 
-	.header .image-container {
-		margin-left: 3rem;
-		margin-top: 0rem;
-		width: 600px;
-		height: 500px;
-	}
-
-		#features{
-			margin-top: 0;
-		}
-
-		.basic-1{
-			margin-top: 0;
-		}
-
-		.image-container.product-header{
-			margin-top: 0rem;
-		}
-
-		.product-margin{
-			margin-top: 0;
-			margin-bottom: 100px;
-		}
-
-	
-	}
 
 	/* end of header */
 
@@ -2447,3 +2415,125 @@ form h1{
 .brands{
 	width: 100px;
 }
+
+#contact-header{
+	border: 2px solid red;
+	margin-top: 200px;
+	padding: 2.125rem 5rem 2.125rem 5rem;
+	height: 100%;
+	width: 	100%;
+	position: relative;
+	color: black;
+}
+
+#contact-header h3,p{
+	color: black;
+}
+
+.contact-form{
+	position: absolute;
+	width:500px;
+
+}
+
+.details{
+	position:absolute;
+	left: 700px ;
+
+}
+
+.details.text{
+	margin-top: 50px;
+	position:absolute;
+	left: 0 ;
+	width: 200px;
+}
+
+.details p{
+	line-height: 0.6rem;
+}
+
+.contact-tabs{
+	text-align: center;
+}
+
+.location{
+	display: inline-block;
+	padding: 530px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	color: white !important;
+
+
+}
+
+.harare{
+	background-color: #2f2c3d;
+	
+	display: inline-block;
+	
+}
+.bulawayo{
+	background-color: #2f2c3d;
+	display: inline-block;
+	
+}
+
+.location span{
+	text-align: center;
+}
+
+.map{
+	margin-top: 50px;
+	position: absolute;
+	left: 200px;
+	display: block;
+
+}
+
+.tabcontent.bluz {
+	display: none;
+}
+
+.location.active {
+	background-color: #47b44f;
+  }
+
+ 
+
+  @media (max-width: 1600px) {
+	/* Header */
+	.header .text-container {
+		margin-top: 0rem;
+		margin-left: 2.5rem;
+	}
+
+	.header .image-container {
+		margin-left: 3rem;
+		margin-top: 0rem;
+		width: 600px;
+		height: 500px;
+	}
+
+		#features{
+			margin-top: 0;
+		}
+
+		.basic-1{
+			margin-top: 0;
+		}
+
+		.image-container.product-header{
+			margin-top: 0rem;
+		}
+
+		.product-margin{
+			margin-top: 0;
+			margin-bottom: 100px;
+		}
+
+	
+
+	
+	}
+  
