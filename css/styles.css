@@ -769,16 +769,26 @@ input[type='checkbox'] {
 .header {
 	/*background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('../images/header-background.jpg') center center no-repeat;
 	background-size: cover;*/
+	height: 100vh;
+	
 }
 
 /*.header{
 	background: none;
 }*/
 
+.row.content{
+	border: 0px solid red;
+	margin: 0 auto;
+	
+	
+}
+
 .header .header-content {
 	padding-top: 8.5rem;
 	padding-bottom: 7rem;
 	text-align: center;
+
 }
 
 .header .text-container {
@@ -2200,7 +2210,7 @@ a:hover.back-to-top {
 	/* Header */
 	.header .text-container {
 		margin-top: 7.5rem;
-		margin-left: 2.5rem;
+		margin-left: 0rem;
 	}
 
 	.header .image-container {
