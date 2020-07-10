@@ -66,7 +66,7 @@
     });
     
 
-    /* Card Slider - Swiper */
+    /* Card Slider - Swiper 
 	var cardSlider = new Swiper('.card-slider', {
 		autoplay: {
             delay: 4000,
