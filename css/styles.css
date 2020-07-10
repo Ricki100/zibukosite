@@ -647,10 +647,11 @@ input[type='checkbox'] {
 }
 
 .navbar-custom .navbar-brand.logo-image img {
-    width: 150px;
-	height: 50px;
+    width: 300px;
+	height: 100px;
 	margin-bottom: 1px;
 	-webkit-backface-visibility: hidden;
+	
 }
 
 .navbar-custom .navbar-brand.logo-text {
@@ -2519,6 +2520,10 @@ form h1{
 
   .header-text{
 	  text-align: center;
+  }
+
+  .none{
+	  display: none;
   }
 
  
