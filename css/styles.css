@@ -651,6 +651,7 @@ input[type='checkbox'] {
 	height: 100px;
 	margin-bottom: 1px;
 	-webkit-backface-visibility: hidden;
+	transition: 0.5s;
 	
 }
 
@@ -821,8 +822,9 @@ input[type='checkbox'] {
 .slider-1 {
 	padding-top: 10rem;
 	padding-bottom: 10rem;
-	background: #272E6C;
+	background: #47b44f;
 	position: relative;
+	color: white;
 
 }
 
@@ -841,7 +843,7 @@ input[type='checkbox'] {
 .slider-1 .slider-container {
 	position: relative;
 	margin: 0 auto;
-	margin-top: 100px;
+	margin-top: 50px;
 	color: #fff;
 }
 
@@ -892,6 +894,7 @@ text-align: center;
 
 .slider-1 .testimonial-author {
 	margin-bottom: 0;
+	color: white;
 }
 
 
@@ -2526,7 +2529,9 @@ form h1{
   }
 
   .none{
-	  display: none;
+	  width: 150px !important;
+	  height: 50px !important;
+	  transition: 0.5s;
   }
 
   .swiper-slide{
@@ -2534,6 +2539,7 @@ form h1{
 	  width: 40%;
 	  margin: 40px;
 	  text-align: center;
+	 
 	 
   }
 

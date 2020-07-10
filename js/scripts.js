@@ -26,11 +26,11 @@
     $(window).on('scroll load', function() {
 		if ($(".navbar").offset().top > 20) {
             $(".fixed-top").addClass("top-nav-collapse");
-            $(".logo-image").addClass("none");
+            $(".navbar-custom .navbar-brand.logo-image img").addClass("none");
            
 		} else {
             $(".fixed-top").removeClass("top-nav-collapse");
-            $(".logo-image").removeClass("none");
+            $(".navbar-custom .navbar-brand.logo-image img").removeClass("none");
 		}
     });
 
