@@ -770,7 +770,7 @@ input[type='checkbox'] {
 /*    04. Header     */
 /*********************/
 .header {
-	background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('../images/header-background.jpg') center center no-repeat;
+	background: rgb(235, 235, 235);
 	background-size: cover;
 	height: 100vh;
 	
@@ -932,7 +932,7 @@ div.negMoney::after {
 .tabs {
 	padding-top: 6.5rem;
 	padding-bottom: 4.25rem;
-	margin-top: 300px;
+
 }
 
 .tabs h2 {
@@ -1458,7 +1458,7 @@ hr.solid {
 
 .slider-2 .swiper-container {
 	position: static;
-	width: 90%;
+	width: 92%;
 	text-align: center;
 }
 
@@ -2251,7 +2251,7 @@ a:hover.back-to-top {
 
 	/* Features */
 	.tabs {
-		padding-bottom: 6.5rem;
+		
 	}
 
 	.tabs #tab-1 .card.first {
