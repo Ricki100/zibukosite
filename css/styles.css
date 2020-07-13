@@ -650,7 +650,7 @@ input[type='checkbox'] {
     width: 300px;
 	height: 80px;
 	margin-bottom: 1px;
-	-webkit-backface-visibility: hidden;
+	transform-origin: left;
 	transition: 0.5s;
 	
 }
@@ -2553,6 +2553,7 @@ form h1{
   .none{
 	  width: 100px !important;
 	  height: 50px !important;
+	  transform-origin: right;
 	  transition: 0.5s;
   }
 
@@ -2593,13 +2594,13 @@ form h1{
   .square{
 	  width: 50%;
 	  float:left;
-	  padding-top: 50px;
-	  padding-bottom: 50px;
+	  height: 200px;
 	  margin: 0;
   }
 
   .square h3{
 	  text-align: center;
+	  margin-top: 50px;
   }
   .square p{
 	  text-align: center;
@@ -2645,7 +2646,7 @@ form h1{
 	vertical-align: top;
 	text-align: center;
 	color: #272E6C !important;
-	width: ;
+
 	margin: 40px;
 }
 
@@ -2660,6 +2661,10 @@ form h1{
 
   .why{
 	  margin-top:50px;
+  }
+
+  .spacer{
+	  display: none;
   }
 
 
@@ -2700,6 +2705,24 @@ form h1{
 		}
 
 	
+
+	
+	}
+
+	@media (min-width: 2000px) {
+		.header-overview{
+			height: 1000px;
+		}
+
+		.about{
+			font-size: 20px;
+			width: 100% !important;
+			line-height: 30px;
+		}
+
+		.spacer{
+			display: block;
+		}
 
 	
 	}
