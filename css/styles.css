@@ -1160,51 +1160,35 @@ font-weight: bold;
 	position: relative;
 }
 
-
-
+.dropbtn {
 	
+  }
+  
+  .dropdown {
+	position: relative;
+	display: inline-block;
+  }
+  
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+  }
+  
+  .dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+  }
 
-	.broke{
-		width: 400px;
-		position: absolute;
-		bottom: 0;
-		left: 50%;
-		z-index: 1;
-		
-	}
-	.budget{
-		width: 400px;
-		position: absolute;
-		bottom: 0;
-		left: 50%;
-		z-index: 1;
-		
-	}
-	.girl{
-		width: 600px;
-		position: absolute;
-		bottom: 120px;
-		left: 40px;
-		z-index: 1;
-		
-	}
-	.doctor{
-		width: 450px;
-		position: absolute;
-		bottom: 120px;
-		left: 12%;
-		z-index: 1;
-		
-	}
+  .dropdown-content a:hover {background-color: #ddd;}
 
-	.school{
-		width: 300px;
-		position: absolute;
-		bottom: 120px;
-		right: 100px;
-		z-index: 1;
-		
-	}
+.dropdown:hover .dropdown-content {display: block;}
+
 
 .basic-1 h2 {
 	margin-bottom: 1.125rem;
