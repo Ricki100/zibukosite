@@ -800,9 +800,86 @@ input[type='checkbox'] {
     z-index: 101;
 }
 
-/*.header{
-	background: none;
-}*/
+/*Parralax*/
+
+.para-text{
+	text-align: center;
+	color: white;
+	font-size: 100px;
+}
+
+.para-overlay{
+	background-color: rgba(0, 0, 0, 0.452);
+	background-size: cover;
+	height: 100%;
+}
+
+.header-funda{
+	background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('../images/parallax/funda.jpg') center center no-repeat;
+	background-size: cover;
+	padding: 19%;
+	width: 100%;
+	background-position: center 0.196px;
+	margin: 0;
+	margin-top: 60px;
+	background-attachment: fixed;
+    position: relative;
+    z-index: 101;
+}
+.header-yambuka{
+	background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('../images/parallax/yambuka.jpg') center center no-repeat;
+	background-size: cover;
+	padding: 19%;
+	width: 100%;
+	background-position: center 0.196px;
+	margin: 0;
+	margin-top: 60px;
+	background-attachment: fixed;
+    position: relative;
+    z-index: 101;
+}
+.header-kura{
+	background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('../images/parallax/kura.jpg') center center no-repeat;
+	background-size: cover;
+	padding: 19%;
+	width: 100%;
+	background-position: center 0.196px;
+	margin: 0;
+	margin-top: 60px;
+	background-attachment: fixed;
+    position: relative;
+    z-index: 101;
+}
+.header-rongeka{
+	background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('../images/parallax/rongeka.jpg') center center no-repeat;
+	background-size: cover;
+	padding: 19%;
+	width: 100%;
+	background-position: center 0.196px;
+	margin: 0;
+	margin-top: 60px;
+	background-attachment: fixed;
+    position: relative;
+    z-index: 101;
+}
+.header-utano{
+	background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('../images/parallax/utano.jpg') center center no-repeat;
+	background-size: cover;
+	padding: 19%;
+	width: 100%;
+	background-position: center 0.196px;
+	margin: 0;
+	margin-top: 60px;
+	background-attachment: fixed;
+    position: relative;
+    z-index: 101;
+}
+
+/*parallax*/
+
+
+
+
 
 .row.content{
 	border: 0px solid red;
@@ -1139,7 +1216,7 @@ font-weight: bold;
 /*     07. Video     */
 /*********************/
 .basic-1 {
-	margin-top: 300px;
+	margin-top: 0px;
 	padding-top: 6.375rem;
 	padding-bottom: 6.875rem;
 	background: #272E6C;
@@ -1471,7 +1548,7 @@ hr.solid {
 	padding-bottom: 6.75rem;
 	background: url(/images/over-background.jpg);
 	background-size: cover; 
-	height: 100%;
+	height: 50%;
 	background-attachment: fixed;
     position: relative;
     z-index: 101;
@@ -2547,10 +2624,12 @@ form h1{
   }
 
   #features{
-	  background-size: cover;
-	  width: 100%;
+	  background-size: cover !important;
+	 
+	  background: url(/images/howitworks.jpg);
 	
 	background-repeat: no-repeat;
+	background-attachment: fixed;
   }
   #features-overview{
 	  background: url(/images/shake.jpg);
