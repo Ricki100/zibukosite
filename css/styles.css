@@ -2703,6 +2703,9 @@ form h1{
   .value p{
 	  color: #272E6C;
   }
+  .values p{
+	  color: #272E6C;
+  }
 
   .value img{
 	  width: 100px;
