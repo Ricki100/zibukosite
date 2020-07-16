@@ -1548,7 +1548,7 @@ hr.solid {
 	padding-bottom: 6.75rem;
 	background: url(/images/over-background.jpg);
 	background-size: cover; 
-	height: 50%;
+
 	background-attachment: fixed;
     position: relative;
     z-index: 101;
