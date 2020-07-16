@@ -1048,7 +1048,7 @@ div.negMoney::after {
 	border: none;
 	border-bottom: 0.1875rem solid #f1f1f8;
 	border-radius: 0;
-	color: rgb(206, 206, 206);
+	color: #272E6C;
 	font: 700 1rem/1.75rem "Montserrat", sans-serif;
 	text-decoration: none;
 	transition: all 0.2s ease;
@@ -2636,6 +2636,9 @@ form h1{
 	
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+  }
+  #features h4{
+	 color: #272E6C;
   }
   #features-overview{
 	  background: url(/images/shake.jpg);
