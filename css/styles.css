@@ -1549,7 +1549,7 @@ hr.solid {
 	padding-bottom: 6.75rem;
 	background: url(/images/over-background.jpg);
 	background-size: cover; 
-	height: 60%;
+	height: 100%;
 	background-attachment: fixed;
     position: relative;
     z-index: 101;
@@ -2807,6 +2807,10 @@ form h1{
 
 		#contact-header{
 			width: 40%;
+		}
+
+		.basic-4{
+			height:60%;
 		}
 
 	
