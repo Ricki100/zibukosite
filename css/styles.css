@@ -2816,3 +2816,26 @@ form h1{
 	
 	}
 
+
+/*mobile*/
+@media (max-width: 1000px) {
+	.navbar-custom .navbar-brand.logo-image img{
+		width: 150px;
+		margin-left:20px;
+	}
+
+	.header .text-container{
+		width: 400px;
+		margin: 0 auto;
+	}
+
+	.header .image-container{
+		display: none;
+	}
+
+
+
+
+}
+
+
