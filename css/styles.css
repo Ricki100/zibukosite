@@ -2839,3 +2839,23 @@ form h1{
 }
 
 
+.canarium{
+    position: fixed;
+    right: 0;
+	top: 200px;
+	z-index: 1;
+	cursor: pointer;
+	background-color: #4633af;
+	padding: 10px 20px;
+	}
+
+	.canarium p{
+		text-align: center;
+		font-weight: bolder;
+		color: white;
+	}
+
+
+.canarium img{
+	width: 100px;
+}
