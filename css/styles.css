@@ -2843,10 +2843,13 @@ form h1{
     position: fixed;
     right: 0;
 	top: 200px;
-	z-index: 1;
+	z-index: 2;
 	cursor: pointer;
 	background-color: #4633af;
-	padding: 10px 20px;
+	padding: 20px 20px;
+	text-decoration: none;
+	font-weight: bolder;
+	text-align: center;
 	}
 
 	.canarium p{
@@ -2856,6 +2859,7 @@ form h1{
 	}
 
 
-.canarium img{
-	width: 100px;
-}
+
+;
+
+
