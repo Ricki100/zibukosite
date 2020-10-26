@@ -2860,6 +2860,14 @@ form h1{
 
 
 
-;
+.canarium-logo{
+	width: 400px;
+	display: inline-block !important;
+  margin: 0 auto;
+}
+
+.canarium-bg{
+	background-color: #fff;
+}
 
 
