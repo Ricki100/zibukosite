@@ -433,6 +433,14 @@ function startSlideshow(){
       $(".no").click(function(){
         $(".canarium").hide(500);
       });
+
+      function multiplyBy()
+{
+ 
+        alert("Page is loaded");
+    
+  
+}
     
   
 

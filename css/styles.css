@@ -2884,4 +2884,15 @@ text-align: center;
 	text-align: center;
 }
 
+#result{
+border: 2px solid red;
+width: 400px;
+height: 100px;
+display: block;
+margin: 0 auto;
+margin-top: 0px;
+margin-top: 40px;
+color: #cecece;
+}
+
 
