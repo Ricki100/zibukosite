@@ -2845,7 +2845,7 @@ form h1{
 	top: 200px;
 	z-index: 2;
 	cursor: pointer;
-	background-color: #4633af;
+	background-color: #272E6C;
 	padding: 20px 20px;
 	text-decoration: none;
 	font-weight: bolder;
@@ -2885,7 +2885,6 @@ text-align: center;
 }
 
 #result{
-border: 2px solid red;
 width: 400px;
 height: 100px;
 display: block;
@@ -2893,6 +2892,12 @@ margin: 0 auto;
 margin-top: 0px;
 margin-top: 40px;
 color: #cecece;
+font-size: 5rem;
+}
+
+.rate{
+	text-align: center;
+    margin: 0 auto;
 }
 
 
