@@ -1488,7 +1488,7 @@ hr.solid {
 	right: -0.375rem;
 	width: 2.75rem;
 	height: 2.75rem;
-	color: #f1f1f8;
+	color: #4633af;
 }
 
 #details-lightbox-1{
@@ -2850,6 +2850,7 @@ form h1{
 	text-decoration: none;
 	font-weight: bolder;
 	text-align: center;
+	color: #fff;
 	}
 
 	.canarium p{
@@ -2862,12 +2863,25 @@ form h1{
 
 .canarium-logo{
 	width: 400px;
-	display: inline-block !important;
+
+}
+
+.canarium-box{
+text-align: center;
   margin: 0 auto;
 }
 
 .canarium-bg{
 	background-color: #fff;
+}
+
+.button{
+	margin-right:40px;
+}
+
+.canarium-text{
+	text-align: justify;
+	text-align: center;
 }
 
 

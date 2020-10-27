@@ -428,6 +428,12 @@ function startSlideshow(){
         document.getElementById(cityName).style.display = "block";
         evt.currentTarget.className += " active";
       }
+
+
+      $(".no").click(function(){
+        $(".canarium").hide(500);
+      });
+    
   
 
 
