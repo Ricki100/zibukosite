@@ -1118,6 +1118,7 @@ font-weight: bold;
 
 .img-fluid{
 	margin-top:0.7rem;
+	max-width: 70%;
 }
 
 .tabs #tab-1 .card.left-pane .card-icon {
