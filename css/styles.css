@@ -897,7 +897,9 @@ input[type='checkbox'] {
 
 .header .text-container {
 	margin-bottom: 3rem;
-	width:600px;
+	width:400px;
+	vertical-align: top;
+	margin-top: 20px !important;
 }
 
 .header h1 {
@@ -1118,7 +1120,7 @@ font-weight: bold;
 
 .img-fluid{
 	margin-top:0.7rem;
-	max-width: 70%;
+	
 }
 
 .tabs #tab-1 .card.left-pane .card-icon {
@@ -2483,6 +2485,7 @@ label{
 
 .main{
 	display: none;
+	max-width: 70%;
 }
 
 form{
