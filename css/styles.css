@@ -897,9 +897,15 @@ input[type='checkbox'] {
 
 .header .text-container {
 	margin-bottom: 3rem;
-	width:400px;
+	width:420px;
 	vertical-align: top;
 	margin-top: 20px !important;
+	
+	
+}
+
+.zibuko{
+	text-align: justify;
 }
 
 .header h1 {
