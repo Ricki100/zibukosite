@@ -2888,14 +2888,14 @@ text-align: center;
 
 .button{
 margin-right:40px;
-background: grey;
+background: #47b44f;
 padding: 10px 20px;
 transition: 0.5s;
 }
 
 .button:hover{
-	background-color: none;
-	border: 1px solid grey;
+	background: none;
+	border: 1px solid rgb(255, 255, 255);
 }
 
 .canarium-text{
@@ -2921,5 +2921,10 @@ font-size: 5rem;
 
 .buttons{
 	margin-top: 20px;
+}
+
+.swiper-slide.payroll{
+margin: 40px;
+margin-right: 40px;
 }
 
