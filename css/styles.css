@@ -900,6 +900,8 @@ input[type='checkbox'] {
 	width:420px;
 	vertical-align: top;
 	margin-top: 20px !important;
+	position: relative !important;
+	height: 480px;
 	
 	
 }
@@ -2302,6 +2304,7 @@ a:hover.back-to-top {
 	.header .text-container {
 		margin-top: 7.5rem;
 		margin-left: 0rem;
+		position: relative;
 	}
 
 	.header .image-container {
@@ -2927,5 +2930,10 @@ font-size: 5rem;
 .swiper-slide.payroll{
 margin: 40px;
 margin-right: 40px;
+}
+
+.position{
+	position: absolute;
+	bottom: 0;
 }
 
