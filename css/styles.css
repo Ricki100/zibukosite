@@ -2932,8 +2932,68 @@ margin: 40px;
 margin-right: 40px;
 }
 
+<<<<<<< Updated upstream
 .position{
 	position: absolute;
 	bottom: 0;
 }
 
+=======
+.center{
+	border:0px solid green;
+	width: 90%;
+	margin: 0 auto;
+  }
+
+  .products{
+	border: 0px red solid;
+	text-align: center;
+	margin-top:0px;
+	position: relative;
+  }
+  
+  .products img{
+	width: 300px;
+	height: 300px;
+  }
+  
+  .product-container{
+  width: 300px;
+  border: 0px solid blue;
+  display: inline-block;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  position:  relative;
+  overflow: hidden;
+  }
+  
+  .product-info{
+  position: absolute;
+  bottom: 0;
+  width: 300px;
+  height: 40px;
+  background-color: #111111a8;
+  transition: 0.4s;
+  }
+  
+  .text{
+  z-index: 4;
+  color: #fff;
+  margin-top: 10px;
+  }
+  
+  .product-info h4{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: #fff;
+  }
+  
+  .product-info:hover{
+	height: 100px;
+  }
+
+  #products{
+	  background-color:  #272E6C;
+	  display: none;
+  }
+>>>>>>> Stashed changes
