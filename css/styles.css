@@ -34,6 +34,7 @@ html {
 	height: 100%;
 	margin: 0;
 		scroll-padding-top: 70px; /* height of sticky header */
+		position: relative;
 
 
 
@@ -1670,7 +1671,7 @@ text-align: center;
 .footer {
 	padding-top: 5rem;
 	background-color: rgb(248, 248, 248);
-	height: 400px;
+
 }
 
 .footer .footer-col {
@@ -1719,7 +1720,7 @@ text-align: center;
 
 .footer p{
 	text-align: center;
-	text-align: justify;
+
 }
 
 /*************************/
@@ -2833,19 +2834,85 @@ form h1{
 
 
 /*mobile*/
-@media (max-width: 1000px) {
+@media (max-width: 600px) {
+	body{
+		text-align: center;
+	}
 	.navbar-custom .navbar-brand.logo-image img{
 		width: 150px;
 		margin-left:20px;
 	}
 
 	.header .text-container{
-		width: 400px;
+		width: 300px;
 		margin: 0 auto;
+		height: 500px;
+	}
+
+	.header .p-large{
+	
+		text-align: center;
 	}
 
 	.header .image-container{
 		display: none;
+	}
+
+	.phone{
+		display: none;
+	}
+
+	.image-container{
+		display: none;
+	}
+
+	.navbar-custom .nav-item .nav-link{
+		color: #47b44f;
+	}
+
+	.swiper-slide{
+		display: block;
+		width: 100%;
+		margin: 0;
+		margin-top: 20px;
+	}
+
+	.copyright{
+	
+		width: 100%;
+	}
+
+	.header-h1{
+		font-size: 2rem;
+	}
+
+	.header .header-content{
+		background-color: #ebebeb;
+	}
+
+	.slider-1{
+		margin-top: 50px;
+	}
+
+	.tabs .card .card-icon{
+		display: none;
+	}
+
+	.basic-1{
+		display: none;
+	}
+
+	.social{
+		display: block;
+		margin-top: 50px;
+	}
+
+	.footer p{
+		text-align: center;
+	}
+
+	.para-text{
+		font-size: 3rem;
 	}
 
 
@@ -2932,68 +2999,8 @@ margin: 40px;
 margin-right: 40px;
 }
 
-<<<<<<< Updated upstream
 .position{
 	position: absolute;
 	bottom: 0;
 }
 
-=======
-.center{
-	border:0px solid green;
-	width: 90%;
-	margin: 0 auto;
-  }
-
-  .products{
-	border: 0px red solid;
-	text-align: center;
-	margin-top:0px;
-	position: relative;
-  }
-  
-  .products img{
-	width: 300px;
-	height: 300px;
-  }
-  
-  .product-container{
-  width: 300px;
-  border: 0px solid blue;
-  display: inline-block;
-  margin-right: 50px;
-  margin-bottom: 50px;
-  position:  relative;
-  overflow: hidden;
-  }
-  
-  .product-info{
-  position: absolute;
-  bottom: 0;
-  width: 300px;
-  height: 40px;
-  background-color: #111111a8;
-  transition: 0.4s;
-  }
-  
-  .text{
-  z-index: 4;
-  color: #fff;
-  margin-top: 10px;
-  }
-  
-  .product-info h4{
-	margin-top: 10px;
-	margin-bottom: 10px;
-	color: #fff;
-  }
-  
-  .product-info:hover{
-	height: 100px;
-  }
-
-  #products{
-	  background-color:  #272E6C;
-	  display: none;
-  }
->>>>>>> Stashed changes
