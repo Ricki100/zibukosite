@@ -35,6 +35,7 @@ html {
 	margin: 0;
 		scroll-padding-top: 70px; /* height of sticky header */
 		position: relative;
+		background: rgb(235, 235, 235);
 
 
 
@@ -774,6 +775,7 @@ input[type='checkbox'] {
 	background: rgb(235, 235, 235);
 	background-size: cover;
 	height: 100vh;
+	margin-bottom: 100px;
 	
 }
 .header-overview {
@@ -2340,7 +2342,7 @@ a:hover.back-to-top {
 	}
 
 	.tabs #tab-4 .card.first {
-		margin-top: 4.25rem;
+		margin-top: 0rem;
 	}
 
 	.tabs #tab-4 .card {
