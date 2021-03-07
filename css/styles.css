@@ -2971,8 +2971,8 @@ p {
   margin-top: 0;
 }
 
-.product-info h4 {
-  margin-top: 10px;
+.product-info h5 {
+  margin-top: 20px;
   margin-bottom: 30px;
   color: #fff;
 }
@@ -2993,4 +2993,8 @@ p {
   border: 0px solid green;
   width: 90%;
   margin: 0 auto;
+}
+
+.products p {
+  font-weight: 600;
 }
